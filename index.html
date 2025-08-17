@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utsav Rai · Portfolio</title>
+  <meta name="description" content="As a software engineer with strong technical skills and problem‑solving abilities, I aim to contribute to company growth by delivering clean, reliable, and innovative solutions." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container hero">
+    <div class="intro">
+      <span class="badge">Software. Systems. Shipping.</span>
+      <h1 class="name">Utsav Rai</h1>
+      <p class="title">Software Engineer · Project Management Enthusiast</p>
+      <p class="summary">As a software engineer with strong technical skills and problem‑solving abilities, I aim to contribute to company growth by delivering clean, reliable, and innovative solutions.</p>
+      <div class="section" style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn" href="Utsav_Rai.pdf" download>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3v10.586l3.293-3.293 1.414 1.414L12 17.414l-4.707-4.707 1.414-1.414L11 13.586V3h1zM5 19h14v2H5z"/></svg>
+          Download Resume
+        </a>
+        <a class="btn outline" href="#projects">View Projects</a>
+      </div>
+    </div>
+    <div class="card contact-card reveal">
+      <h3>Contact</h3>
+      <ul>
+        <li>📍 Gorakhpur, Uttar Pradesh</li>
+        <li>✉️ <a href="mailto:Utsav0408@gmail.com">Utsav0408@gmail.com</a></li>
+        <li>📞 <a href="tel:+918737000673">+91 8737000673</a></li>
+        <li>🔗 <a href="https://www.linkedin.com/in/utsav-rai-6b6726201/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card section reveal">
+      <h2>About</h2>
+      <p>I enjoy building clean, reliable software with a focus on problem‑solving, project ownership, and readable code.</p>
+      <div class="grid two">
+        <div>
+          <h3>Education</h3>
+          <p><strong>MAKAUT (WBUT)</strong><br>B.Tech in CSE (2022–2026)<br/>GPA: 7.5</p>
+        </div>
+        <div>
+          <h3>Certifications</h3>
+          <ul>
+            <li>Data Structures & Algorithms — Udemy (2025)</li>
+            <li>Machine Learning — AIEFCEMT (2025)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="card section reveal">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">Java</span><span class="chip">Python</span><span class="chip">C</span>
+        <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">React</span>
+        <span class="chip">SQL</span><span class="chip">Spring Boot</span>
+      </div>
+    </section>
+
+    <section id="projects" class="card section reveal">
+      <h2>Projects</h2>
+      <div id="projectGrid"></div>
+    </section>
+
+    <section id="contact" class="card section reveal">
+      <h2>Get in touch</h2>
+      <form id="contactForm" action="https://formspree.io/f/mwkzvyzz" method="POST">
+        <div class="grid two">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+        </div>
+        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+        <button class="btn" type="submit">Send</button>
+        <p id="form-response" class="sub"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Utsav Rai. All rights reserved.</p>
+  </footer>
+
+  <script>window.__PROJECTS__ = [{"name": "Online Banking System", "tech": ["Java"], "description": "A secure banking application supporting accounts, balance checks, transfers, and transaction history.", "links": {"github": "", "demo": ""}}, {"name": "Personalized AI Learning Assistant", "tech": ["Python", "Flask"], "description": "An AI assistant that adapts to learning styles and recommends tailored study resources.", "links": {"github": "", "demo": ""}}];</script>
+  <script src="script.js"></script>
+</body>
+</html>
